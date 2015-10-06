@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/imageView3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/controlbar" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/pauseimageButton"
+        android:src="@drawable/pausebutton"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/backwardimageButton"
+        android:src="@drawable/backward"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignRight="@+id/pauseimageButton"
+        android:layout_marginRight="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/forwardimageButton"
+        android:src="@drawable/forward"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignLeft="@+id/pauseimageButton"
+        android:layout_marginLeft="65dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/volumebar"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:maxHeight="6dp"
+        android:layout_marginStart="32dp"
+        android:thumb="@drawable/thumb"
+        android:progressDrawable="@drawable/prog"
+        android:layout_marginBottom="0dp"
+        android:splitTrack="false"
+        android:layout_alignRight="@+id/backwardimageButton"
+        android:layout_marginRight="50dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/volumeicon"
+        android:src="@drawable/volumemax"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/upbar"
+        android:background="@drawable/upbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:id="@+id/blueguider"
+        android:layout_alignStart="@+id/timeBar"
+        android:layout_marginStart="16dp"
+        android:layout_alignEnd="@+id/timeBar"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="22dp"
+        android:background="#69b4ff"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeBar"
+        android:maxHeight="6dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:thumb="@drawable/thumb"
+        android:progressDrawable="@drawable/progtime"
+        android:layout_marginTop="0dp"
+        android:splitTrack="false"
+        android:layout_marginRight="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0:00"
+        android:textSize="16sp"
+        android:textColor="#1c1c1c"
+        android:id="@+id/starttime"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0:00"
+        android:textColor="#1c1c1c"
+        android:id="@+id/endtime"
+        android:textSize="16sp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/exit"
+        android:background="@drawable/exit"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBottom="@+id/add"
+        android:layout_toStartOf="@+id/add" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/add"
+        android:background="@drawable/add"
+        android:layout_alignBottom="@+id/forwardimageButton"
+        android:layout_alignEnd="@+id/endtime" />
+    <RelativeLayout
+        android:id="@+id/graphics_holder"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/upbar"
+        android:layout_above="@+id/imageView3">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/activity_video2_deletecircle"
+            android:id="@+id/deletecircle"
+            android:textSize="10sp"
+            android:layout_above="@+id/increase"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/increase"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/activity_video2_increasesize"
+            android:id="@+id/increase"
+            android:textSize="10sp"
+            android:layout_above="@+id/decrease"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/decrease" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/activity_video2_decreasesize"
+            android:id="@+id/decrease"
+            android:textSize="10sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <ToggleButton
+            android:id="@+id/record_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:textSize="8sp"
+            android:textOff="@string/activity_video2_exportsequence"
+            android:textOn="End Capture"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/deletecircle"
+            android:layout_alignStart="@+id/deletecircle"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="start/stop screen recording.\nNote!! Screen recording keeps running\neven if you stop Activity\nuntil you explicitly stop\n"
+            android:textColor="#ffff0000"
+            android:textSize="24sp"
+            android:layout_above="@+id/pause_button" />
+
+        <ToggleButton
+            android:id="@+id/pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:textOff="PAUSE"
+            android:textOn="RESUME"
+            android:layout_below="@+id/record_button"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/searchimageprofile2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchimageprofile"
+            android:src="@drawable/search"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

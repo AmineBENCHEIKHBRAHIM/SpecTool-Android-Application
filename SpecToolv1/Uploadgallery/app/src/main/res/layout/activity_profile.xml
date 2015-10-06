@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/finalprofile2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROFILE"
+        android:id="@+id/profiletext"
+        android:textSize="34dp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROFILE"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:id="@+id/profiletextbutton"
+        android:layout_below="@+id/profiletext"
+        android:layout_toStartOf="@+id/profiletext"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW VIDEO"
+        android:textSize="24dp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:id="@+id/newvideo"
+        android:layout_alignTop="@+id/profiletextbutton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SETTINGS"
+        android:textSize="24dp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:id="@+id/settings"
+        android:layout_alignTop="@+id/newvideo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Controller Name"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/controllername"
+        android:layout_below="@+id/newvideo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Controller Occupation"
+        android:textSize="18dp"
+        android:textColor="#babdbb"
+        android:id="@+id/occupation"
+        android:layout_below="@+id/controllername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputSearch"
+        android:layout_below="@+id/occupation"
+        android:layout_alignParentStart="true"
+        android:hint="Search videos.."
+        android:inputType="textVisiblePassword"
+        android:layout_marginTop="57dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:listSelector="@drawable/list_selector"
+        android:layout_below="@+id/inputSearch"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

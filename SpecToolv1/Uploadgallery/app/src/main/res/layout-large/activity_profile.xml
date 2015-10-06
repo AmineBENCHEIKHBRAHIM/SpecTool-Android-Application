@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="16.4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_profile_profile"
+            android:id="@+id/profiletext"
+            android:textSize="25dp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_profile_profile"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/actifback"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/profiletextbutton"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/threelinesprofile"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="-10dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_profile_newvideo"
+            android:textSize="18sp"
+            android:background="@drawable/transparentback"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:id="@+id/newvideo"
+            android:layout_alignTop="@+id/profiletextbutton"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_profile_settings"
+            android:textSize="18sp"
+            android:background="@drawable/transparentback"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:id="@+id/settings"
+            android:layout_alignTop="@+id/newvideo"
+            android:layout_alignEnd="@+id/searchimageprofile"
+            android:layout_marginEnd="4dp"/>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/threelinesprofile2"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/threelinesprofile"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/threelines"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/searchimageprofile2"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchimageprofile"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/greenpoint"
+            android:src="@drawable/greenpoint"
+            android:layout_alignTop="@+id/settings"
+            android:layout_toStartOf="@+id/settings"
+            android:layout_marginEnd="-30dp"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:id="@+id/relativeLayout"
+        android:layout_weight="28.6">
+
+
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imgView"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="LoadImageFromGallery"
+            />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fullwidthprofileactivityimage"
+            android:background="@drawable/profilepart2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Controller Name"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/controllername"
+            android:layout_above="@+id/occupation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Controller Occupation"
+            android:textSize="14sp"
+            android:textColor="#babdbb"
+            android:id="@+id/occupation"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="55.0">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputSearch"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/activity_profile_searchvideo"
+            android:inputType="textVisiblePassword"
+            android:layout_marginTop="0dp" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:listSelector="@drawable/list_selector"
+            android:layout_below="@+id/inputSearch"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

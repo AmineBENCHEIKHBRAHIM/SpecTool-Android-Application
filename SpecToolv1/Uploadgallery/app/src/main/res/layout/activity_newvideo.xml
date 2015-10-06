@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Name"
+        android:id="@+id/nametext"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="47dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameedittext"
+        android:hint="Please enter your video name"
+        android:layout_below="@+id/nametext"
+        android:layout_alignStart="@+id/nametext"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:id="@+id/locationtext"
+        android:layout_below="@+id/nameedittext"
+        android:layout_alignStart="@+id/nameedittext"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationedittext"
+        android:hint="Please enter your location"
+        android:layout_below="@+id/locationtext"
+        android:layout_alignStart="@+id/locationtext"
+        android:layout_marginTop="10dp" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_below="@+id/locationedittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reference"
+        android:id="@+id/referencetext"
+        android:layout_below="@+id/datePicker"
+        android:layout_alignStart="@+id/locationedittext"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/referenceedittext"
+        android:hint="Please enter your video reference"
+        android:layout_below="@+id/referencetext"
+        android:layout_alignStart="@+id/referencetext"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Secret Number"
+        android:id="@+id/secretnumbertext"
+        android:layout_below="@+id/referenceedittext"
+        android:layout_alignStart="@+id/referenceedittext"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/secretnumberedittext"
+        android:hint="Please enter your secret number"
+        android:layout_below="@+id/secretnumbertext"
+        android:layout_alignStart="@+id/secretnumbertext"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Description"
+        android:id="@+id/descriptiontext"
+        android:layout_below="@+id/secretnumberedittext"
+        android:layout_alignStart="@+id/secretnumberedittext"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:gravity="left|top"
+        android:lines="3"
+        android:id="@+id/descriptionedittext"
+        android:layout_below="@+id/descriptiontext"
+        android:layout_alignStart="@+id/descriptiontext"
+        android:layout_alignEnd="@+id/datePicker"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Recording"
+        android:id="@+id/startrecordingbutton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/descriptionedittext"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

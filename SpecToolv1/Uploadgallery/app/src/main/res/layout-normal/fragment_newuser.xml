@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/fragment_newusermainLayout"
+    android:orientation="vertical" android:background="@drawable/auroral">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/logintextViewadminnewuser"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logineditTextadminnewuser"
+        android:inputType="textNoSuggestions"
+        android:layout_below="@+id/logintextViewadminnewuser"
+        android:layout_alignStart="@+id/logintextViewadminnewuser"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/passwordtextViewadminnewuser"
+        android:layout_below="@+id/logineditTextadminnewuser"
+        android:layout_alignStart="@+id/logineditTextadminnewuser"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:id="@+id/passwordeditTextadminnewuser"
+        android:layout_below="@+id/passwordtextViewadminnewuser"
+        android:layout_alignStart="@+id/passwordtextViewadminnewuser"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/nametextViewadminnewuser"
+        android:layout_below="@+id/passwordeditTextadminnewuser"
+        android:layout_alignStart="@+id/passwordeditTextadminnewuser"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:id="@+id/namededitTextadminnewuser"
+        android:layout_below="@+id/nametextViewadminnewuser"
+        android:layout_alignStart="@+id/nametextViewadminnewuser"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Occupation"
+        android:id="@+id/occupationtextViewadminnewuser"
+        android:layout_below="@+id/namededitTextadminnewuser"
+        android:layout_alignStart="@+id/namededitTextadminnewuser"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:id="@+id/occupationeditTextadminnewuser"
+        android:layout_below="@+id/occupationtextViewadminnewuser"
+        android:layout_alignStart="@+id/occupationtextViewadminnewuser"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add User"
+        android:id="@+id/updatebuttonadminnewuser"
+        android:layout_below="@+id/occupationeditTextadminnewuser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

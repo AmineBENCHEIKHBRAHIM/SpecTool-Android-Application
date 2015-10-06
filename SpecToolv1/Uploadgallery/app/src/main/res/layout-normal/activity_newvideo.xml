@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/searchimageprofile2"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchimageprofile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/search" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_newvideo_videoname"
+        android:textSize="15sp"
+        android:id="@+id/nametext"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameedittext"
+        android:textSize="15sp"
+        android:hint="@string/activity_newvideo_entervideoname"
+        android:layout_below="@+id/nametext"
+        android:layout_alignStart="@+id/nametext"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_newvideo_location"
+        android:textSize="15sp"
+        android:id="@+id/locationtext"
+        android:layout_below="@+id/nameedittext"
+        android:layout_alignStart="@+id/nameedittext"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationedittext"
+        android:hint="@string/activity_newvideo_enterlocation"
+        android:textSize="15sp"
+        android:layout_below="@+id/locationtext"
+        android:layout_alignStart="@+id/locationtext"
+        android:layout_marginTop="10dp" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_below="@+id/locationedittext"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:scaleX="0.8"
+        android:scaleY="0.8"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_newvideo_reference"
+        android:textSize="15sp"
+        android:id="@+id/referencetext"
+        android:layout_below="@+id/datePicker"
+        android:layout_alignStart="@+id/locationedittext"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/referenceedittext"
+        android:textSize="15sp"
+        android:hint="@string/activity_newvideo_enterreference"
+        android:layout_below="@+id/referencetext"
+        android:layout_alignStart="@+id/referencetext"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_newvideo_secretnumber"
+        android:textSize="15sp"
+        android:id="@+id/secretnumbertext"
+        android:layout_below="@+id/referenceedittext"
+        android:layout_alignStart="@+id/referenceedittext"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:ems="10"
+        android:id="@+id/secretnumberedittext"
+        android:hint="@string/activity_newvideo_entersecretnumber"
+        android:textSize="15sp"
+        android:layout_below="@+id/secretnumbertext"
+        android:layout_alignStart="@+id/secretnumbertext"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_newvideo_videodescription"
+        android:textSize="15sp"
+        android:id="@+id/descriptiontext"
+        android:layout_below="@+id/secretnumberedittext"
+        android:layout_alignStart="@+id/secretnumberedittext"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textSize="15sp"
+        android:ems="10"
+        android:gravity="left|top"
+        android:lines="1"
+        android:maxLength="100"
+        android:id="@+id/descriptionedittext"
+        android:layout_below="@+id/descriptiontext"
+        android:layout_alignStart="@+id/descriptiontext"
+        android:layout_alignEnd="@+id/datePicker"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_newvideo_startrecording"
+        android:textSize="8sp"
+        android:id="@+id/startrecordingbutton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/descriptionedittext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_newvideo_uploadvideo"
+        android:textSize="8sp"
+        android:id="@+id/uploadvideonew"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/descriptionedittext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"/>
+
+
+</RelativeLayout>
+    </ScrollView>

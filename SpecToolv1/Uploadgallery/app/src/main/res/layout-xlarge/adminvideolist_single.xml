@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:padding="5dip">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Name"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/listvideonametextadmin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="22dip"
+        android:layout_height="22dip"
+        android:id="@+id/listlocalimage"
+        android:src="@drawable/local"
+        android:layout_below="@+id/listvideonametextadmin"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/listvideonametextadmin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp"
+        android:id="@+id/listlocaltextadmin"
+        android:layout_alignTop="@+id/listlocalimage"
+        android:layout_toEndOf="@+id/listlocalimage"
+        android:layout_marginStart="5dp" />
+
+    <ImageView
+        android:layout_width="22dip"
+        android:layout_height="22dip"
+        android:id="@+id/listdateimage"
+        android:src="@drawable/date"
+        android:layout_alignTop="@+id/listlocalimage"
+        android:layout_toRightOf="@+id/listlocalimage"
+        android:layout_marginStart="160dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp"
+        android:id="@+id/listdatetextadmin"
+        android:layout_alignTop="@+id/listdateimage"
+        android:layout_toEndOf="@+id/listdateimage"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/listlengthtextadminvideo"
+        android:layout_alignTop="@+id/listdatetextadmin"
+        android:layout_toEndOf="@+id/listdateimage"
+        android:layout_marginStart="165dp" />
+
+    <ImageView
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:id="@+id/adminremovevideoimage"
+        android:src="@drawable/delete"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="removeUserOnClickHandler"
+        android:layout_marginEnd="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="By:"
+        android:id="@+id/textViewBy"
+        android:layout_alignTop="@+id/listvideonametextadmin"
+        android:layout_toEndOf="@+id/listvideonametextadmin"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="New Text"
+        android:id="@+id/adminvideolistcontrollername"
+        android:layout_alignTop="@+id/textViewBy"
+        android:layout_toEndOf="@+id/textViewBy"
+        android:layout_marginLeft="5dp"/>
+
+
+</RelativeLayout>

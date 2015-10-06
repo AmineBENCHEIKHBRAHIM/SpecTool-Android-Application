@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@drawable/auroral">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/logintextViewadminsettings"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logineditTextadminsettings"
+        android:inputType="textNoSuggestions"
+        android:layout_below="@+id/logintextViewadminsettings"
+        android:layout_alignStart="@+id/logintextViewadminsettings"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/passwordtextViewadminsettings"
+        android:layout_below="@+id/logineditTextadminsettings"
+        android:layout_alignStart="@+id/logineditTextadminsettings"
+        android:layout_marginTop="30dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:id="@+id/passwordeditTextadminsettings"
+        android:layout_below="@+id/passwordtextViewadminsettings"
+        android:layout_alignStart="@+id/passwordtextViewadminsettings"
+        android:layout_marginTop="30dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Admin Settings"
+        android:id="@+id/updatebuttonadminsettings"
+        android:layout_below="@+id/passwordeditTextadminsettings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+</RelativeLayout>

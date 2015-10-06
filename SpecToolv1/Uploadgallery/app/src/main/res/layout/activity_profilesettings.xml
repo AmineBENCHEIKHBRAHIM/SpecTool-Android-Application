@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/logintextViewsettings"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logineditTextsettings"
+        android:inputType="textNoSuggestions"
+        android:layout_below="@+id/logintextViewsettings"
+        android:layout_alignStart="@+id/logintextViewsettings"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/passwordtextViewsettings"
+        android:layout_below="@+id/logineditTextsettings"
+        android:layout_alignStart="@+id/logineditTextsettings"
+        android:layout_marginTop="30dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:id="@+id/passwordeditTextsettings"
+        android:layout_below="@+id/passwordtextViewsettings"
+        android:layout_alignStart="@+id/passwordtextViewsettings"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/nametextViewsettings"
+        android:layout_below="@+id/passwordeditTextsettings"
+        android:layout_alignStart="@+id/passwordeditTextsettings"
+        android:layout_marginTop="30dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:id="@+id/namededitTextsettings"
+        android:layout_below="@+id/nametextViewsettings"
+        android:layout_alignStart="@+id/nametextViewsettings"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Occupation"
+        android:id="@+id/occupationtextViewsettings"
+        android:layout_below="@+id/namededitTextsettings"
+        android:layout_alignStart="@+id/namededitTextsettings"
+        android:layout_marginTop="30dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:id="@+id/occupationeditTextsettings"
+        android:layout_below="@+id/occupationtextViewsettings"
+        android:layout_alignStart="@+id/occupationtextViewsettings"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/updatebuttonsettings"
+        android:layout_below="@+id/occupationeditTextsettings"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="200dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancelbuttonsettings"
+        android:layout_below="@+id/occupationeditTextsettings"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="200dp"/>
+</RelativeLayout>

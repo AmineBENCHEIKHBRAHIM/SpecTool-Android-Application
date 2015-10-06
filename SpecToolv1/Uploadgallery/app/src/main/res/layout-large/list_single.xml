@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal" android:padding="5dip">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Name"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/listvideonametext"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="22dip"
+        android:layout_height="22dip"
+        android:id="@+id/listlocalimage"
+        android:src="@drawable/local"
+        android:layout_below="@+id/listvideonametext"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/listvideonametext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="14sp"
+        android:id="@+id/listlocaltext"
+        android:layout_alignTop="@+id/listlocalimage"
+        android:layout_toEndOf="@+id/listlocalimage"
+        android:layout_marginStart="5dp" />
+
+    <ImageView
+        android:layout_width="22dip"
+        android:layout_height="22dip"
+        android:id="@+id/listdateimage"
+        android:src="@drawable/date"
+        android:layout_alignTop="@+id/listlocalimage"
+        android:layout_toRightOf="@+id/listlocalimage"
+        android:layout_marginStart="160dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="14sp"
+        android:id="@+id/listdatetext"
+        android:layout_alignTop="@+id/listdateimage"
+        android:layout_toEndOf="@+id/listdateimage"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length"
+        android:id="@+id/listlengthtext"
+        android:layout_alignTop="@+id/listdatetext"
+        android:layout_toEndOf="@+id/listdateimage"
+        android:layout_marginStart="165dp" />
+
+    <ImageView
+        android:layout_width="22dip"
+        android:layout_height="22dip"
+        android:id="@+id/listeditedimage"
+        android:src="@drawable/nonedited"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"/>
+
+
+</RelativeLayout>

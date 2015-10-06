@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Thales SpecTool</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="help">Help</string>
+    <string name="cancel">Cancel</string>
+    <string name="newvideo">New Video</string>
+    <string name="enterallvalues">Please enter all values</string>
+
+    //activity_main
+    <string name="activity_main_sign_in">Sign In</string>
+    <string name="activity_main_login">Login</string>
+    <string name="activity_main_password">Password</string>
+
+    //activity_profile
+    <string name="activity_profile_profile">PROFILE</string>
+    <string name="activity_profile_newvideo">NEW VIDEO</string>
+    <string name="activity_profile_settings">SETTINGS</string>
+    <string name="activity_profile_searchvideo">Search videos..</string>
+    <string name="activity_profile_helptext">This is your profile page :\nYou can perform multiple actions here :\n\n  1.Changing your profile picture:\nBy clicking on your profile picture, a new window will pop up where you can select the profile picture you want to display from the gallery.\n\n  2.Creating a new video:\nIn order to create a new video, simply click on the NEW VIDEO button.\n\n  3.Changing your profile settings:\nIf you would like to change your profile settings such as your login, your password, your name or your occupation, simply click on the settings button.\n\n  4.Searching and displaying a previously created video:\nIn order to search a video by name, simply make a single click on the input where Search videos.. is displayed. Once you find the video you\'re searching for, a simple click will display it. The information displayed for each video are in order : Video name, localisation, creation date and video length.\n\n  5.Displaying the help menu:\nIn order to display the help menu, simply click on the blue button on the up right.\n\n  6.Logging out:\nIn order to log out, simply click on the blue button on the up left.\n</string>
+
+    //profile_settings
+    <string name="profile_settings_login">Login</string>
+    <string name="profile_settings_password">Password</string>
+    <string name="profile_settings_name">Name</string>
+    <string name="profile_settings_occupation">Position</string>
+    <string name="profile_settings_update">UPDATE</string>
+    <string name="profile_settings_cancel">CANCEL</string>
+    <string name="profile_settings_helptext">This is the profile settings page :\nYou should fill all fields below :\n\n  1.Login:\nEnter your new login.\n\n  2.Password:\nEnter your new password.\n\n  3.Name:\nEnter your name.\n\n  4.Position:\nEnter your occupation.e.g, Senior Airport Controller.</string>
+
+    //activity_newvideo
+    <string name="activity_newvideo_videoname">Video Name</string>
+    <string name="activity_newvideo_entervideoname">Please enter your video name</string>
+    <string name="activity_newvideo_location">Location</string>
+    <string name="activity_newvideo_enterlocation">Please enter your location</string>
+    <string name="activity_newvideo_reference">Reference</string>
+    <string name="activity_newvideo_enterreference">Please enter your video reference</string>
+    <string name="activity_newvideo_secretnumber">Comment length</string>
+    <string name="activity_newvideo_entersecretnumber">Please enter your comment length in seconds</string>
+    <string name="activity_newvideo_videodescription">Video Description</string>
+    <string name="activity_newvideo_startrecording">START RECORDING</string>
+    <string name="activity_newvideo_uploadvideo">UPLOAD VIDEO</string>
+    <string name="activity_newvideo_helptext">This is the new video creation page :\nYou should fill all fields below :\n\n  1.Video Name:\nEnter the name you want to give to your video.\n\n  2.Location:\nEnter the location the video was taken.\n\n  3.Date:\nSelect the date the video was taken.\n\n  4.Reference:\nEnter the video reference.Any value is accepted at this stage of the application.\n\n  5.Comment length:\nEnter the comment length. The value must be between 1 and 10 seconds.\n\n  6.Video description:\nEnter the description of the video. A maximum of 200 letters is applicable.\n\nClick on START RECORDING if you want to record a video using the camera or click on UPLOAD VIDEO if you want to upload a video from the SD CARD.\n</string>
+
+    //activity_videopresentation
+    <string name="activity_videopresentation_video">VIDEO</string>
+    <string name="activity_videopresentation_infos">INFOS</string>
+    <string name="activity_videopresentation_newvideo">NEW VIDEO</string>
+    <string name="activity_videopresentation_editvideo">EDIT VIDEO</string>
+    <string name="activity_videopresentation_generalinfos">General Infos</string>
+    <string name="activity_videopresentation_length">Length: </string>
+    <string name="activity_videopresentation_location">Location: </string>
+    <string name="activity_videopresentation_reviews">Reviews: </string>
+    <string name="activity_videopresentation_lastedit">Last Edit: </string>
+    <string name="activity_videopresentation_helptext">This is your video presentation page :\nYou can perform multiple actions here :\n\n  1.Creating a new video:\nIn order to create a new video, simply click on the NEW VIDEO button.\n\n  2.Edit your video by adding comments over it:\nIf you would like to edit your video, simply click on the EDIT VIDEO button.\n\n  This video presentation page allows you to visualize your selected video. It also shows you some elementary information of it such as video description, length, location, number of reviews and the date of the last edit.\n\n</string>
+
+    //activity_video2
+    <string name="activity_video2_deletecircle">delete circle</string>
+    <string name="activity_video2_increasesize">increase size</string>
+    <string name="activity_video2_decreasesize">decrease size</string>
+    <string name="activity_video2_exportsequence">Export Sequence</string>
+    <string name="activity_video2_endcapture">End Capture</string>
+    <string name="activity_video2_exit">EXIT</string>
+    <string name="activity_video2_helptext">This is your video editing seen :\nYou can perform multiple actions here :\n\n  1.Play/pause video:\nClick on the play/pause button in order to play or pause the video.\n\n  2.Forward Video:\nAdvance video by 4 seconds.\n\n  3.Backward:\nMove video back by 4 seconds.\n\n  4.Adding a comment circle:\nOnly when the video is paused, Click on the + circle in order to add a comment circle to the scene. The comment will appear at the exact moment you added it in the video. It will be displayed for 2 seconds.\n\n  5.Adding a comment text:\nOnly when the video is paused, While touching a circle with your index, click on the scene with your middle finger in order to add a comment text.\n\n  6.Drag and Drop:\nYou can drag and drop comment circles and texts to where you want them tobe displayed.\n\n  7.Delete comment circle:\nClick on a comment circle then click the delete circle button in order to delete it.\n\n  8.Edit comment text:\nOnly when the video is paused, While touching a comment text with your index, click on the scene with your middle finger in order to pop up a window where you can insert your new text.\n\n  8.Delete comment text:\nIn order to delete comment text, simply in edit comment text mode, delete all characters. The comment will disappear.\n\n  9.Increase/Decrease comment circle size:\nClick on a comment circle then click the increase size/decrease size button in order to change the comment circle size.\n\n  10.Export the scene to a video file:\nIn order to export the scene to a video file, simply click on the record sequence button and allow permissions. The video will restart over and a scene export will take place. At the end, a success message will be displayed and you can check your video in the ScreenRecSample Directory under newspecapprepository. This feature is only available for Android 5.0 and above.\n\n  11.Exit:\nClick on exit button to exit edit mode.\n\n  12.Change sound volume:\nMove the green slider in order to change the video playing sound. This action will have no effect over the exported video files.\n\n  12.Navigate video:\nMove the blue slider in order to navigate in the video timeline.\n</string>
+
+
+
+
+
+
+
+</resources>
